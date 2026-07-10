@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Multibits</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Multibits</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                    <li><a href="about.html" data-lang-fr="À propos" data-lang-en="About">À propos</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <button id="langToggle" class="btn btn-link navbar-btn" style="color: #9d9d9d; text-decoration: none;">
+                            English
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        <h2>Contact</h2>
+        <h3 data-lang-fr="Contactez-nous" data-lang-en="Contact us">Contactez-nous</h3>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4 data-lang-fr="Adresse" data-lang-en="Address">Adresse</h4>
+                <address>
+                    118 chemin de la Rive-Gauche<br />
+                    St-Donat, Québec, Canada J0T 2C0<br />
+                    <abbr title="Phone" data-lang-fr="Téléphone" data-lang-en="Phone">Téléphone</abbr>: 514-800-2934
+                </address>
+
+                <h4>Support</h4>
+                <address>
+                    <strong data-lang-fr="Courriel" data-lang-en="Email">Courriel</strong>: <a href="mailto:Web@multibits.ca">Web@multibits.ca</a>
+                </address>
+            </div>
+
+            <div class="col-md-6">
+                <h4 data-lang-fr="Envoyez-nous un message" data-lang-en="Send us a message">Envoyez-nous un message</h4>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-lang-fr="Nom" data-lang-en="Name">Nom</label>
+                        <input type="text" class="form-control" id="name" data-lang-fr="Votre nom" data-lang-en="Your name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-lang-fr="Courriel" data-lang-en="Email">Courriel</label>
+                        <input type="email" class="form-control" id="email" data-lang-fr="votre.courriel@exemple.com" data-lang-en="your.email@example.com" placeholder="votre.courriel@exemple.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-lang-fr="Sujet" data-lang-en="Subject">Sujet</label>
+                        <input type="text" class="form-control" id="subject" data-lang-fr="Sujet de votre message" data-lang-en="Subject of your message" placeholder="Sujet de votre message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" data-lang-fr="Votre message" data-lang-en="Your message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-lang-fr="Envoyer" data-lang-en="Send">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <p data-lang-fr="© 2016-2026 Tous droits réservés - Multibits Inc." data-lang-en="© 2016-2026 All rights reserved - Multibits Inc.">© 2016-2025 Tous droits réservés - Multibits Inc.</p>
+        </footer>
+    </div>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/site.js"></script>
+</body>
+</html>
